@@ -62,7 +62,7 @@ header p{color:#b7e4c7;font-size:.95rem;font-weight:300;margin-top:4px;}
 <div class="resumen" id="res" style="display:none"></div>
 <div class="grid" id="grid" style="display:none"></div>
 <script>
-var SU="https://script.google.com/macros/s/AKfycbzruIqR6k55VQmyXKuZ5LBczezTUYWpKorbgBnI7eCtX9bVs6TtxLhjmQJR1lRhxFgK/exec";
+var SU="https://script.google.com/macros/s/AKfycbx327VQ0fF0dQjX9AIWKaWDYXhLCRKRp3IXvukBx0Vj8spI99r7AaJchWctASw2LJCF/exec";
 function sISO(f){var d=new Date(f);d.setHours(0,0,0,0);d.setDate(d.getDate()+4-(d.getDay()||7));var y=new Date(d.getFullYear(),0,1);return Math.ceil((((d-y)/86400000)+1)/7);}
 var HOY=sISO(new Date()),ANIO=new Date().getFullYear();
 document.getElementById("badge").textContent="Semana "+HOY+" · "+ANIO;
@@ -109,4 +109,5 @@ fetch(SU).then(function(r){return r.json();}).then(function(data){
 });
 </script>
 </body>
+
 </html>
